@@ -77,7 +77,7 @@ fun WebRTCScreen(
     onRemoteRendererCreated: (SurfaceViewRenderer) -> Unit
 ) {
     val context = LocalContext.current
-    var serverUrl by remember { mutableStateOf("ws://192.168.3.12:8080/ws") }
+    var serverUrl by remember { mutableStateOf("ws://172.20.10.10:8080/ws") }
     var isConnected by remember { mutableStateOf(false) }
 
     // Permission handling
